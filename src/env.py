@@ -1,6 +1,9 @@
-
+from config import GameSettings
 
 class Env:
+
+    def __init__(self, config: GameSettings):
+        ...
 
     def step(self, action):
         """
@@ -52,5 +55,15 @@ class Env:
     def observation_space(self):
         """
         Returns the space of possible observations
+
+        [
+            agent_x, agent_y,
+            goal_x,  goal_y,
+            up_x, up_y, up_length, up_width,
+            down_x, down_y, down_length, down_width,
+            up_x, up_y, up_length, up_width,
+            up_x, up_y, up_length, up_width,
+        ]
         """
         return []
+
