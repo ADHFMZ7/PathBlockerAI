@@ -19,6 +19,8 @@ def main():
 
         obs, reward, terminated = env.step(action)
 
+        
+
         if env.render():
 
 
