@@ -2,7 +2,6 @@ from collections import deque
 from torch import nn
 import random
 
-
 class DQN(nn.Module):
 
     def __init__(self, n_observations, n_actions):
